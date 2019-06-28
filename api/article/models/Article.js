@@ -8,18 +8,20 @@ const axios = require('axios')
 module.exports = {
   // Before saving a value.
   // Fired before an `insert` or `update` query.
-  beforeSave: async (model) => {
-    axios.post('https://api.netlify.com/build_hooks/5d15dfdce2c29ee9235ed6f9').then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-  },
+  // beforeSave: async (model) => {},
 
   // After saving a value.
   // Fired after an `insert` or `update` query.
-  // afterSave: async (model, result) => {},
+  afterSave: async (model, result) => {
+    if(result){
+      axios.post('https://api.netlify.com/build_hooks/5d15dfdce2c29ee9235ed6f9').then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    }
+  },
 
   // Before fetching all values.
   // Fired before a `fetchAll` operation.

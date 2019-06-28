@@ -1,0 +1,28 @@
+{
+  "name": "strapi-plugin-client-page-control",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "client-page-control",
+    "icon": "plug",
+    "description": "Description of client-page-control plugin."
+  },
+  "dependencies": {},
+  "author": {
+    "name": "A Strapi developer",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "license": "MIT"
+}
