@@ -1,4 +1,5 @@
 'use strict';
+const axios = require('axios')
 
 /**
  * Lifecycle callbacks for the `Article` model.
@@ -7,7 +8,14 @@
 module.exports = {
   // Before saving a value.
   // Fired before an `insert` or `update` query.
-  // beforeSave: async (model) => {},
+  beforeSave: async (model) => {
+    axios.post('https://api.netlify.com/build_hooks/5d15dfdce2c29ee9235ed6f9').then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  },
 
   // After saving a value.
   // Fired after an `insert` or `update` query.
