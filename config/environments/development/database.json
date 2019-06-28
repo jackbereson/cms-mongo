@@ -5,13 +5,13 @@
       "connector": "strapi-hook-mongoose",
       "settings": {
         "client": "mongo",
-        "host": "127.0.0.1",
+        "host": "cluster0-shard-00-00-f1tyq.mongodb.net",
         "port": 27017,
-        "database": "cms-mongo",
-        "username": "",
-        "password": ""
+        "database": "jackblogDb",
+        "username": "jackbereson",
+        "password": "72MmUMOFC65m7oHD"
       },
-      "options": {}
+      "options": {"ssl": true}
     }
   }
 }

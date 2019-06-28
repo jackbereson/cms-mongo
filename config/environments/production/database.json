@@ -5,13 +5,13 @@
       "connector": "strapi-hook-mongoose",
       "settings": {
         "client": "mongo",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
-        "username": "${process.env.DATABASE_USERNAME || ''}",
-        "password": "${process.env.DATABASE_PASSWORD || ''}"
+        "host": "cluster0-shard-00-00-f1tyq.mongodb.net",
+        "port": 27017,
+        "database": "jackblogDb",
+        "username": "jackbereson",
+        "password": "72MmUMOFC65m7oHD"
       },
-      "options": {}
+      "options": {"ssl": true}
     }
   }
 }
