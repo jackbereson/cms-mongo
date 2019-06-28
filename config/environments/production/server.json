@@ -1,6 +1,6 @@
 {
-  "host": "angry-darwin-8c49b5.netlify.com",
-  "port": "",
+  "host": "localhost",
+  "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
     "enabled": false
@@ -9,6 +9,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": true
+    "autoOpen": false
   }
 }
