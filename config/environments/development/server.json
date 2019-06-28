@@ -1,6 +1,6 @@
 {
-  "host": "angry-darwin-8c49b5.netlify.com",
-  "port": 80,
+  "host": "localhost",
+  "port": 1337,
   "proxy": {
     "enabled": false
   },

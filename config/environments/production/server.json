@@ -1,6 +1,6 @@
 {
-  "host": "https://angry-darwin-8c49b5.netlify.com",
-  "port": 1337,
+  "host": "angry-darwin-8c49b5.netlify.com",
+  "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
     "enabled": false
